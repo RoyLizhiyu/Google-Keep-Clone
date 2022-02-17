@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #F0ECE3;
+  padding: 0 16px;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  width: 106%;
+  
+}
+
+header h1 {
+  color: #5f6368;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  position: relative;
+  bottom: 2px;
+  left:-5px;
+
+}
+
+.searchForm{
+  position: relative;
+  display: flex;
+  width:35%;
+  left:5%;
+  background-color: #f1f3f4;
+  border-radius: 6px;
+  border: none;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.searchForm:hover{
+  background-color:white;
+  
+}
+
+.searchForm input{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  
+
+}
+.searchForm input:focus{
+  outline: none;
+  
+}
+
+.note h1{
+  font-weight: normal;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 280px;
+  margin: 16px;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  float: left;
+  min-height: 150px;
+  position: relative;
+
+}
+
+.note:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 0px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note button:hover {
+  background-color: black;
+}
+
+.contentInput{
+  padding-bottom: 15%;
+}
+.sideBar{
+  min-height: 100%;
+  width:300px;
+  position:absolute;
+  z-index: 1;
+  top: 82px;
+  left: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.sideBtn{
+  padding: 20px 20px 20px 30px;
+  width: 100%;
+  font-size: 25px;
+  color: #5f6368;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sideBtn:hover{
+  background-color:#f1f3f4 ;
+
+}
+
+
+.notes{
+  margin-left: 300px;
+}
+
+
+.menuB {
+  position: relative;
+  top: -2px;
+  left: -15px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+.menuB:hover{
+  background-color: #feefc3;
+
+}
+
+
+.inputA {
+  margin-left: 300px;
+}
+
+
+.finishButton{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 23px; 
+  right: 258px; 
+  background-color: black; 
+  border-radius: 100%; 
+  border: none;
+  color: white; 
+  width: 25px; 
+  height: 25px;
+  float: right;
+  cursor: pointer;
+}
+
+.optionPalatte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 13px;
+    left: -1px;
+    
+}
+
+.options{
+  background-color: transparent;
+  border: none;
+  color: #5f6368;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0px 8px;
+
+}
+
+.options:hover{
+  background-color: rgba(95,99,104,0.157);
+}
+
+
+
+.pinButton{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  color: #5f6368;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  top:5px;
+}
+
+.pinButton:hover{
+  background-color: rgba(95,99,104,0.157);
+}
+
+
+.searchButton{
+  background-color: transparent;
+  border: none;
+  color: #5f6368;
+  border-radius: 100%;
+  width: 40px; 
+  height: 40px;
+}
+
+.searchButton:hover{
+  background-color: rgba(95,99,104,0.157);
+}
+
+
+
+@media only screen and (max-width: 1125px) {
+  .PDbtn{top: 60px;}
+}
+
+
+.bgColor:hover{
+  background-color: black;
+}
+
+.changeNote input{
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  outline: none;
+  border: white;
+}
+
+.changeNote textarea{
+  font-size: 1.1em;
+  margin-bottom: 0px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: white;
+}
